@@ -1,0 +1,135 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comfort Homecare Nursing Services</title>
+ <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <header>
+    Welcome to Comfort Homecare Nursing Services | 
+    <a href="tel:+265998168012">+265 998 16 80 12</a>
+    <a href="tel:+265883403055">+265 883 40 30 55</a>
+    <a href="mailto:malundapetit@gmail.com">malundapetit@gmail.com</a>
+  </header>
+  <nav>
+    <div><strong>Comfort Homecare</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#coverage">Coverage</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+  <section class="hero">
+    <div>
+      <h1>Compassionate nursing care in the comfort of your home</h1>
+      <p>Our certified nurses support your independence and enhance quality of life with friendly, reliable care—around the clock.</p>
+      <a href="tel:+265998168012" class="btn btn-primary">Call Now</a>
+      <a href="#contact" class="btn btn-secondary">Request a Callback</a>
+    </div>
+  </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At Comfort Homecare, we are dedicated to helping clients maintain independence and improve their quality of life right where they feel safest—at home. With a team of certified nurses, we provide compassionate care with a friendly, calm approach tailored to each client.</p>
+    <p>We support individuals of all ages across Blantyre (BT) and surrounding areas, including odd hours and emergency visits. Let us be your partner in a comfortable and fulfilling lifestyle.</p>
+  </section>
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <img src="images/SC500News-1920w.webp">
+        <h3>Vital Signs Monitoring</h3>
+        <p>Regular checks to ensure health stability.</p>
+        </div>
+      <div class="service-card">
+        <img src="images/2015_9$largeimg01_Tuesday_2015_183346747.jpg">
+        <h3>Feeding</h3>
+        <p>Assiastance with proper nutrition intake.</p>
+        </div>
+      <div class="service-card">
+        <img src="images/medium-shot-smiley-woman-taking-notes_23-2149741239.jpg">
+        <h3>Dressing</h3>
+        <p>Help with dressing for comfort and hygiene.</p>
+        </div>
+      <div class="service-card">
+        <img src="images/Leg-wound-and-gauze-GettyImages-103919213.jpg">
+        <h3>Wound Dressing</h3>
+        <p>Expert care for wound management.</p>
+        </div>
+      <div class="service-card">
+        <img src="images/shutterstock_By_ESB_Professional.jpg">
+        <h3>Physiotherapy</h3>
+        <p>Professional sessions to improve mobility.</p>
+        </div>
+      <div class="service-card">
+        <img src="images/Patient-Hands-with-Glucometer.jpg">
+        <h3>Glucose Monitoring</h3>
+        <p>Regular blood glucose checks</p>
+        </div>
+    </div>
+  </section>
+  <section id="coverage">
+    <h2>Service Coverage</h2>
+    <p>We proudly serve clients in Blantyre (BT) and surrounding areas. Contact us to confirm availability in your neighborhood and schedule an in‑home assessment.</p>
+    <div class="coverage">
+      <div>Blantyre City</div>
+      <div>Limbe</div>
+      <div>Chitawira</div>
+      <div>Chilomoni</div>
+      <div>Sunnyside</div>
+      <div>Namiwawa</div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="mailto:malundapetit@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="Name" placeholder="Your name" required />
+      <input type="text" name="Phone" placeholder="Phone number" required />
+      <textarea name="Message" placeholder="Briefly describe the help you need"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  
+  <button id="backToTop">⬆ Top</button>
+ 
+  
+  <footer>
+    <div>
+      <strong>Comfort Homecare Nursing Services</strong>
+      <p>Compassionate, professional home nursing for all ages in BT and surrounding areas.</p>
+      <a href="tel:+265998168012">+265 998 16 80 12</a>
+      <a href="tel:+265883403055">+265 883 40 30 55</a>
+      <a href="mailto:malundapetit@gmail.com">malundapetit@gmail.com</a>
+    </div>
+    <div class="bottom">
+      <span>© <span id="year"></span> Comfort Homecare Nursing Services. All rights reserved.</span>
+      <span>
+        <a href="#about">About</a> | 
+        <a href="#services">Services</a> | 
+        <a href="#contact">Contact</a>
+      </span>
+    </div>
+  </footer>
+  
+  <script>
+    const backToTopBtn = document.getElementById("backToTop");
+
+    // Show button after scrolling down 200px
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopBtn.style.display = "block";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
+    };
+
+    // Scroll smoothly to top when clicked
+    backToTopBtn.onclick = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
