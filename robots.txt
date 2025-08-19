@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://e40sr.github.io/comforthomecare-/sitemap.xml
