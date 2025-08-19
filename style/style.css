@@ -142,6 +142,10 @@ img {
   border-radius: 7px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
   #backToTop {
       display: none; /* hidden by default */
