@@ -90,16 +90,18 @@ body {
       border:1px solid #e2e8f0;
       border-radius:15px; 
       padding:20px; 
-      background:#fff; 
+      background:#fff;
+      position: relative;
+      overflow: hidden;
     }
-    .service-card:hover {    
+    /* .service-card:hover {    
       
       transform: translateY(-5px);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: all 0.3s ease;
       border-color: #0369a1;
 
-    }
+    } */
     .coverage { 
       grid-template-columns:repeat(auto-fit, minmax(120px,1fr)); 
     }
@@ -171,4 +173,41 @@ html {
       font-size: 16px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.2);
       transition: opacity 0.3s;
+    }
+
+    .price {
+      font-size: 16px;
+      color: #474a4b;
+      font-weight: bold;
+      background: #3f8a94;
+      position: absolute;
+      top: 20px;
+      left: -120px;
+      padding: 8px 18px;
+      border-radius: 20px;
+      box-shadow: 0 2px 8px rgba(3, 105, 161, 0.08);
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      opacity: 0;
+      transition: left 0.4s cubic-bezier(.68,-0.55,.27,1.55), opacity 0.3s;
+
+      cursor: pointer;
+    }
+
+    .price-label {
+      color: #dce2e6;
+      font-weight: bold;
+      font-size: 15px;
+      margin-right: 6px;
+      letter-spacing: 0.5px;
+    }
+
+    .service-card:hover > .price {
+      background: #0369a1;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(3, 105, 161, 0.15);
+      left: 20px;
+      opacity: 1;
     }

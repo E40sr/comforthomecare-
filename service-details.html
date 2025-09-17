@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service Details | Comfort Homecare</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/service-details.css">
+  <!-- Font Awesome CDN (latest version as of now) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-...hash..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <header>
+    <a href="index.html">&#8592; Back to Home</a>
+    <h1 id="service-title">Chronic Illness</h1>
+  </header>
+  <main>
+    <div class="service-details">
+        <span><i class="fa-solid fa-phone"></i></span>
+      <img id="service-image" src="images/chronic.jpeg" alt="Service Image" class="service-details-image">
+        <div class="service-details-content">
+          <h2 id="service-title-main">Chronic Illness</h2>
+          <div class="price">
+            <strong>Price:</strong> <span id="service-price">K40,000 per day</span>
+          </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Comfort Homecare Nursing Services. All rights reserved.</p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Optionally, use query params to populate service details dynamically
+  </script>
+</body>
+</html>
