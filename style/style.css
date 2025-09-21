@@ -1,7 +1,10 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@500;700&display=swap');
+
+
 body { 
   margin:0; 
-  font-family:Arial, sans-serif; 
+  font-family: 'Montserrat', sans-serif; 
   color:#1e293b; 
 
  
@@ -211,7 +214,7 @@ html {
       position: absolute;
       top: 20px;
       left: -120px;
-      padding: 5.6px 12px;
+      padding: 8px 18px;
       border-radius: 20px;
       box-shadow: 0 2px 8px rgba(3, 105, 161, 0.08);
       z-index: 2;

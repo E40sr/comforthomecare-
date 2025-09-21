@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@500;700&display=swap');
+
+
+
+
 body { 
   margin:0; 
-  font-family:Arial, sans-serif; 
+  font-family: "Montserrat", sans-serif; 
   color:#1e293b; 
   background-color: #ffffff85; /* fallback color */
   background-image: url('../images/medium-shot-smiley-woman-taking-notes_23-2149741239.jpg') no-repeat center;
@@ -119,10 +124,10 @@ body {
 
 .inner-container {
     width: 350px;
-    height: 350px;
+    height: 370px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 1px 3px 6px hsl(197, 78%, 46%);
+    box-shadow: 1px 2px 4px hsl(197, 78%, 46%);
 
 
 }
