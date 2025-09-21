@@ -2,12 +2,9 @@ body {
   margin:0; 
   font-family:Arial, sans-serif; 
   color:#1e293b; 
-  /* background-color: #f0f0f085; fallback color */
+  background-color: #ffffff85; /* fallback color */
   background-image: url('../images/medium-shot-smiley-woman-taking-notes_23-2149741239.jpg') no-repeat center;
-  background-repeat: no-repeat;
-  background-size: cover;  /* make the image cover the screen */
-  background-position: center;
-}
+} 
 
 
 /* Navigation bar styles */
@@ -173,7 +170,7 @@ img {
 
 .time {
     font-style: italic;
-    background: #fbbf24;
+    background: #24b7fb;
     color: #fff;
     padding: 5px 15px;
     border-radius: 8px;
