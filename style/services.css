@@ -172,13 +172,14 @@ img {
 }
 
 .time {
+    font-style: italic;
     background: #fbbf24;
     color: #fff;
     padding: 5px 15px;
     border-radius: 8px;
     text-align: center;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
     list-style: none;
 }
 
