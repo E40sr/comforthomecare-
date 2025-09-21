@@ -26,6 +26,7 @@
   <meta name="google-site-verification" content="Cc4DfhkgvIZCAW5EGNAIAQCeHYapzSFxvBxx77vmG1M" />
   
   <link rel="stylesheet" href="style/style.css">
+  <link rel="icon" type="image/png" href="images/grok_image_5ujxin~2 (2).jpg">
 </head>
 <body>
   <header>
@@ -35,14 +36,24 @@
     <a href="mailto:malundapetit@gmail.com">malundapetit@gmail.com</a>
   </header>
   <nav>
-    <div><strong>Comfort Homecare</strong></div>
-    <div>
+  <div class="nav-container">
+    
+    <strong class="logo">
+      <img src="images/grok_image_5ujxin~2 (2).jpg" alt="" class="logo-img">
+      Comfort Homecare  
+    </strong>
+    <button class="hamburger" id="hamburger">
+      &#9776;
+    </button>
+    <div class="nav-links" id="navLinks">
       <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#coverage">Coverage</a>
       <a href="#contact">Contact</a>
     </div>
-  </nav>
+  </div>
+</nav>
+
   <section class="hero">
     <div>
       <h1>Compassionate nursing care in the comfort of your home</h1>
@@ -66,6 +77,10 @@
         <div class="price">
          <strong class="price-label">K25,000</strong>
         </div>
+        <div class="more-info">
+          <strong><a  href="hamburger.html">More</a></strong>
+        </div>
+        
         </div>
       <div class="service-card">
         <img src="images/2015_9$largeimg01_Tuesday_2015_183346747.jpg">
@@ -73,6 +88,9 @@
         <p>Assiastance with proper nutrition intake.</p>
         <div class="price">
           <strong class="price-label">K10,000</strong>
+        </div>
+        <div class="more-info">
+          <strong><a  href="feeding.html">More</a></strong>
         </div>
         </div>
       <div class="service-card">
@@ -82,13 +100,20 @@
           <div class="price">
            <strong class="price-label">K15,000</strong>
         </div>
+        <div class="more-info">
+          <strong><a  href="hamburger.html">More</a></strong>
         </div>
+        </div>
+        
       <div class="service-card">
         <img src="images/Leg-wound-and-gauze-GettyImages-103919213.jpg">
         <h3>Wound Dressing</h3>
         <p>Expert care for wound management.</p>
           <div class="price">
            <strong class="price-label">K10,000</strong>
+        </div>
+        <div class="more-info">
+          <strong><a  href="hamburger.html">More</a></strong>
         </div>
         </div>
       <div class="service-card">
@@ -100,6 +125,9 @@
             K40,000
            </strong>
         </div>
+        <div class="more-info">
+          <strong><a  href="hamburger.html">More</a></strong>
+        </div>
         </div>
       <div class="service-card">
         <img src="images/Patient-Hands-with-Glucometer.jpg">
@@ -108,13 +136,19 @@
           <div class="price">
            <strong class="price-label">K20,000</strong>
         </div>
+        <div class="more-info">
+          <strong><a  href="hamburger.html">More</a></strong>
+        </div>
         </div>
       <div class="service-card">
         <img src="images/chronic.jpeg">
         <h3>Chronic Illness</h3>
         <p>A chronic illness is a long-lasting health condition that typically requires ongoing medical attention.</p>
-          <div class="price">
+        <div class="price">
            <strong class="price-label">K40,000</strong>
+        </div>
+        <div class="more-info">
+          <strong><a  href="chronic.html">More</a></strong>
         </div>
         </div>
     </div>
@@ -163,24 +197,8 @@
     </div>
   </footer>
   
-  <script>
-    const backToTopBtn = document.getElementById("backToTop");
-
-    // Show button after scrolling down 200px
-    window.onscroll = function() {
-      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        backToTopBtn.style.display = "block";
-      } else {
-        backToTopBtn.style.display = "none";
-      }
-    };
-
-    // Scroll smoothly to top when clicked
-    backToTopBtn.onclick = function() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-  
-    document.getElementById('year').textContent = new Date().getFullYear();
+  <script src="script.js">
+   
   </script>
 </body>
 </html>

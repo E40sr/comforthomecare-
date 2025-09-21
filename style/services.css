@@ -1,0 +1,221 @@
+body { 
+  margin:0; 
+  font-family:Arial, sans-serif; 
+  color:#1e293b; 
+  /* background-color: #f0f0f085; fallback color */
+  background-image: url('../images/medium-shot-smiley-woman-taking-notes_23-2149741239.jpg') no-repeat center;
+  background-repeat: no-repeat;
+  background-size: cover;  /* make the image cover the screen */
+  background-position: center;
+}
+
+
+/* Navigation bar styles */
+
+
+    nav {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -220px;
+    height: 100vh;
+    min-height: 100vh;
+    width: 220px;
+    background: #fff;
+    flex-direction: column;
+    box-shadow: -2px 0 12px rgba(0,0,0,0.08);
+    border-left: 1px solid #e2e8f0;
+    padding-top: 70px;
+    transition: right 0.3s cubic-bezier(.68,-0.55,.27,1.55);
+    z-index: 2000;
+    display: flex;
+    gap: 0;
+    overflow-y: auto;
+  }
+  .nav-links.show {
+    right: 0;
+  }
+  .nav-links a {
+    padding: 18px 24px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #0369a1;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 24px;
+    z-index: 2100;
+  }
+  body.menu-open {
+    overflow: hidden;
+  }
+}
+
+.logo-img {
+  object-fit: contain;
+  width: 25px;
+}
+
+  
+  header { 
+      background:#0369a1; 
+      color:#fff; 
+      padding:8px 20px; 
+      font-size:14px;
+    }
+    header a{ 
+      color:#fff; 
+      text-decoration:none; 
+      margin-left:15px; 
+    }
+
+.container {
+    
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    gap: 40px; 
+    place-items: center;
+
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+}
+
+.inner-container {
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 6px hsl(197, 78%, 46%);
+
+
+}
+
+.info {
+    width: 350px;
+    height: 350px;
+    /* box-shadow: 2px 4px 15px #c71a1a; */
+    padding: 10px;
+    border-radius: 10px;
+    display: grid;
+    gap: 20px;
+    
+}
+
+.info .price {
+    color: #111;
+    background: #c71a1a;
+}
+
+
+img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.contacts {
+    background: #1e293b;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.price {
+    background: #c71a1a;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.time {
+    background: #fbbf24;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    list-style: none;
+}
+
+.call-button {
+    background: #22c55e;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.email-button {
+    background: #3b82f6;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer { 
+      background:#0f172a; 
+      color:#cbd5e1; 
+      padding:40px 20px; 
+    }
+    footer a { 
+      color:#fff; 
+      text-decoration:none;
+      display:block; 
+      margin-top:5px;
+    }
+    footer .bottom { 
+      border-top:1px solid #334155;
+      margin-top:20px;
+      padding-top:10px; 
+      font-size:12px; 
+      display:flex; 
+      justify-content:space-between; 
+    }

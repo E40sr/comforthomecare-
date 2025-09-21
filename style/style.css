@@ -3,6 +3,8 @@ body {
   margin:0; 
   font-family:Arial, sans-serif; 
   color:#1e293b; 
+
+ 
 }
     header { 
       background:#0369a1; 
@@ -15,7 +17,7 @@ body {
       text-decoration:none; 
       margin-left:15px; 
     }
-    nav {
+    /* nav {
       background:#fff; 
       border-bottom:1px solid #e2e8f0;
       padding:12px 20px; 
@@ -30,13 +32,15 @@ body {
       text-decoration:none; 
       color:#0369a1;
       font-weight:bold;
-    }
+    } */
     .hero {
       display:grid;
       grid-template-columns:1fr; 
       gap:20px;
-      padding:60px 20px;
-      background:radial-gradient(circle at top right, #e0f2fe, #fff);
+      padding:150px 20px;
+      background :radial-gradient(circle at bottom right, #00e1ffa8, #ffffff73);
+      background: url('../images/medium-shot-smiley-woman-taking-notes_23-2149741239.jpg') no-repeat center center/cover;
+      
     }
     .hero h1 { 
       font-size:32px;
@@ -62,13 +66,15 @@ body {
     }
     .btn-secondary { 
       border:1px solid #0369a1; 
+      background: #ffffffc7;
       color:#0369a1; 
     }
     section { 
       padding:60px 20px; 
       max-width:1100px; 
       margin:auto; 
-      box-shadow: 1px 4px 10px #0369a1;
+      box-shadow: 1px 4px 15px #0369a1;
+      background: #ffffffe5;
     }
     section h2 { 
       font-size:26px; 
@@ -196,6 +202,33 @@ html {
       cursor: pointer;
     }
 
+    .more-info {
+      background: #007bff;
+      font-size: 15px;
+      color: #edf1f3;
+      font-weight: bold;
+      
+      position: absolute;
+      top: 20px;
+      left: -120px;
+      padding: 5.6px 12px;
+      border-radius: 20px;
+      box-shadow: 0 2px 8px rgba(3, 105, 161, 0.08);
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      opacity: 0;
+      transition: left 0.6s cubic-bezier(.68,-0.55,.27,1.55), opacity 0.3s;
+      cursor: pointer;
+    }
+
+    .more-info a {
+      text-decoration: none;
+      color: #f9ffffe8;
+      font-weight: 800;
+    }
+
     .price-label {
       color: #dce2e6;
       font-weight: bold;
@@ -209,5 +242,97 @@ html {
       color: #fff;
       box-shadow: 0 4px 12px rgba(3, 105, 161, 0.15);
       left: 20px;
-      opacity: 1;
+      opacity: 0.7;
     }
+    .service-card:hover > .more-info {
+      color: #dce2e6;
+      background: #007bff;    
+      left: 130px;
+      opacity: 0.7;
+    }
+
+
+/* Navigation bar styles */
+
+
+    nav {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -220px;
+    height: 100vh;
+    min-height: 100vh;
+    width: 220px;
+    background: #fff;
+    flex-direction: column;
+    box-shadow: -2px 0 12px rgba(0,0,0,0.08);
+    border-left: 1px solid #e2e8f0;
+    padding-top: 70px;
+    transition: right 0.3s cubic-bezier(.68,-0.55,.27,1.55);
+    z-index: 2000;
+    display: flex;
+    gap: 0;
+    overflow-y: auto;
+  }
+  .nav-links.show {
+    right: 0;
+  }
+  .nav-links a {
+    padding: 18px 24px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #0369a1;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 24px;
+    z-index: 2100;
+  }
+  body.menu-open {
+    overflow: hidden;
+  }
+}
+
+.logo-img {
+  object-fit: contain;
+  width: 25px;
+}
