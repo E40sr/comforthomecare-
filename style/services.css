@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@500;700&display=swap');
 
-
-
-
 body { 
   height: 100vh;
   margin:0; 
   font-family: "Montserrat", sans-serif; 
   color:#1e293b; 
-  background-color: #ffffff85; /* fallback color */
-  background-image: url('../images/medium-shot-smiley-woman-taking-notes_23-2149741239.jpg') no-repeat center;
+  background-color: #fffffff3; /* fallback color */
+  background-image: url('../images/medical-seamless-pattern-doodles-on-600nw-2506833813.webp');
   background-size: cover;
   object-fit: contain;
 } 
@@ -133,7 +130,7 @@ body {
     border-radius: 10px;
     box-shadow: 1px 2px 4px hsl(197, 78%, 46%);
 
-
+    background: #ffffffb7;
 }
 
 .info {

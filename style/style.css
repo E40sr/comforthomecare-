@@ -41,7 +41,7 @@ body {
       grid-template-columns:1fr; 
       gap:20px;
       padding:150px 20px;
-      background :radial-gradient(circle at bottom right, #00e1ffd3, #ffffff73);
+      background :radial-gradient(circle at bottom right, #00e1ffe7, #ffffff);
       background: url('../images/medium-shot-smiley-woman-taking-notes_23-2149741239.jpg') no-repeat center center/cover;
       
     }
