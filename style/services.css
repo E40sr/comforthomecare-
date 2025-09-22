@@ -144,11 +144,6 @@ nav {
     
 }
 
-.info .price {
-    color: #111;
-    background: #c71a1a;
-}
-
 
 img {
   width: 100%;
@@ -165,7 +160,7 @@ img {
 }
 
 .price {
-    background: #c71a1a;
+    background: #3ea117b6;
     color: #fff;
     padding: 10px 15px;
     border-radius: 8px;
@@ -178,7 +173,7 @@ img {
 
 .time {
     font-style: italic;
-    background: #24b7fb;
+    background: #24b7fbb9;
     color: #fff;
     padding: 5px 15px;
     border-radius: 8px;
