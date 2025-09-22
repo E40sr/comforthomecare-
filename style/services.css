@@ -15,7 +15,7 @@ body {
 /* Navigation bar styles */
 
 
-    nav {
+nav {
   background: #fff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   position: sticky;
@@ -172,6 +172,8 @@ img {
     text-align: center;
     font-weight: bold;
     font-size: 18px;
+
+    font-size: larger;
 }
 
 .time {

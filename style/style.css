@@ -53,7 +53,9 @@ body {
     .hero p { 
       margin-top:10px; 
       font-size:16px; 
-      color:#475569; 
+      color:#043247; 
+
+      text-shadow: 0.5px 0.5px #a9b2bb;
     }
     .btn { 
       display:inline-block; 
