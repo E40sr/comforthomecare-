@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vital Sign Monitoring</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style/services.css">
+  <link rel="icon" type="image/png" href="images/grok_image_5ujxin~2 (2).jpg">
+</head>
+<body>
+  <header>
+    Welcome to Comfort Homecare Nursing Services | <br>
+    <a href="tel:+265998168012">+265 998 16 80 12</a> 
+    <a href="tel:+265883403055">+265 883 40 30 55</a>
+    <a href="mailto:malundapetit@gmail.com">malundapetit@gmail.com</a>
+  </header>
+  <nav>
+    <div class="nav-container" style="display: flex; align-items: center; justify-content: space-between;">
+      <div style="display: flex; align-items: center;">
+        <img src="images/grok_image_5ujxin~2 (2).jpg" alt="" class="logo-img" style="margin-right: 10px;">
+        <strong class="logo" style="font-size: 1.2em;">Comfort Homecare</strong>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#coverage">Coverage</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="inner-container">
+      <img src="images/vital-sign-monitoring.webp" alt="">
+      <h2>Vital Sign Monitoring</h2>
+      <div class="details">
+        Vital sign monitoring is crucial for assessing the health status of patients, especially those with chronic conditions.
+      </div> 
+    </div>
+    <div class="info">
+      <div class="price">
+        <strong>K40 000 <i>Per day</i></strong>
+      </div>
+      <div class="time">
+        <p>
+    At Comfort Homecare Nursing Services, we provide comprehensive vital sign monitoring to ensure your health is
+      </div>
+      <div class="contacts">
+        <a href="tel:+265998168012" class="call-button"> Call <i class="fas fa-phone-alt"></i></a>
+        <a href="index.html#contact" class="email-button"> Send Message <i class="fas fa-paper-plane"></i></a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div>
+      <strong>Comfort Homecare Nursing Services</strong>
+      <p>Compassionate, professional home nursing for all ages in BT and surrounding areas.</p>
+      <a href="tel:+265998168012">+265 998 16 80 12</a>
+      <a href="tel:+265883403055">+265 883 40 30 55</a>
+      <a href="mailto:malundapetit@gmail.com">malundapetit@gmail.com</a>
+    </div>
+    <div class="bottom">
+      <span>© <span id="year"></span> Comfort Homecare Nursing Services. All rights reserved.</span>
+      <span>
+        <a href="index.html#about">About</a> | 
+        <a href="index.html#services">Services</a> | 
+        <a href="index.html#contact">Contact</a>
+      </span>
+    </div>
+  </footer>
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', function() {
+      navLinks.classList.toggle('show');
+      hamburger.innerHTML = navLinks.classList.contains('show') 
+        ? '<i class="fas fa-times"></i>' 
+        : '<i class="fas fa-bars"></i>';
+    });
+
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

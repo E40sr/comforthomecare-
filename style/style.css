@@ -20,22 +20,7 @@ body {
       text-decoration:none; 
       margin-left:15px; 
     }
-    /* nav {
-      background:#fff; 
-      border-bottom:1px solid #e2e8f0;
-      padding:12px 20px; 
-      display:flex;
-      justify-content:space-between; 
-      align-items:center;
-      position:sticky; top:0;
-      z-index: 3;
-    }
-    nav a { 
-      margin-left:15px; 
-      text-decoration:none; 
-      color:#0369a1;
-      font-weight:bold;
-    } */
+   
     .hero {
       display:grid;
       grid-template-columns:1fr; 
@@ -43,7 +28,7 @@ body {
       padding:150px 20px;
       background :radial-gradient(circle at bottom right, #00e1ffe7, #ffffff);
       background: url('../images/medium-shot-smiley-woman-taking-notes_23-2149741239.jpg') no-repeat center center/cover;
-      
+
     }
     .hero h1 { 
       font-size:32px;
@@ -78,7 +63,7 @@ body {
       padding:60px 20px; 
       max-width:1100px; 
       margin:auto; 
-      box-shadow: 1px 4px 15px #0369a1;
+      /* box-shadow: 1px 4px 10px #0369a1;  */
       background: #ffffffe5;
     }
     section h2 { 
@@ -334,6 +319,10 @@ html {
   }
   body.menu-open {
     overflow: hidden;
+  }
+
+  section {
+    box-shadow: 1px 8px 7px #0369a1;
   }
 }
 
